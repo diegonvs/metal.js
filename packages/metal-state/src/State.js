@@ -702,9 +702,7 @@ class State extends EventEmitter {
 		const disposed = this.isDisposed();
 		if (disposed) {
 			console.warn(
-				`Error. Trying to access property "${
-					name
-				}" on disposed instance`
+				`Trying to access property "${name}" on disposed instance`
 			);
 		}
 		return disposed;
